@@ -1,0 +1,11 @@
+.registrasi{   
+    background-color: rgb(88, 175, 175);
+    border: 2px solid #e7e2e2;
+    padding: 50px;
+    display: inline-flexbox;
+    text-align: center;
+    margin-right: 500px;
+    margin-left: 500px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 7px;
+}

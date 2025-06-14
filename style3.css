@@ -1,0 +1,11 @@
+.Login{   
+    background-color: rgb(88, 175, 175);
+    border: 2px solid #eeeaea;
+    padding: 50px;
+    display: inline-block;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 7px;
+}

@@ -1,0 +1,105 @@
+/* navbar bagian atas, warnanya cerah dan posisinya di tengah */
+.navbar {
+    background-color: rgb(36, 102, 121);
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 7px;
+}
+
+/* container ini sebenernya ga dipake di html, jadi bisa aja dihapus */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* menu utama dibuat sejajar dan no list-style */
+.menu {
+    margin: 0;
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* jarak antar item menu */
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+    position: relative; /* penting buat munculin dropdown */
+}
+
+/* link menu utama */
+.menu li a {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* efek hover biar menu keliatan interaktif */
+.menu li:hover > a {
+    background-color: rgb(36, 102, 121);
+}
+
+/* dropdown dan submenu disembunyiin dulu */
+.dropdown, .dropdown-submenu {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(211, 246, 255);
+    border: 1px solid rgb(197, 213, 218);
+    min-width: 200px;
+    z-index: 10;
+}
+
+/* link di dalam dropdown */
+.dropdown li a {
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-align: left;
+}
+
+/* hover di dalam dropdown, kasih warna biar ada feedback */
+.dropdown li:hover > a {
+   background-color: rgb(36, 102, 121);
+}
+
+/* pas hover item utama, dropdown-nya muncul */
+.menu > li:hover > .dropdown {
+    display: block;
+}
+
+/* pas hover dropdown item, submenu-nya nongol di kanan */
+.dropdown > li:hover > .dropdown-submenu {
+    display: block;
+    top: 0;
+    left: 100%;
+}
+
+/* section untuk best seller, tampil beda dengan padding dan warna */
+.buku-best-seller, .majalah-best-seller {
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(36, 102, 121);
+    border-radius: 10px;
+}
+
+/* isi buku dan majalah ditata sejajar */
+.buku, .majalah {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* styling tiap item buku atau majalah */
+.bukuku, .majalahku {
+    padding: 50px;
+    border: 1px solid rgb(197, 213, 218);
+    border-radius: 5px;
+    background-color: rgb(211, 246, 255);
+    text-align: center;
+    width: 100px;
+}
